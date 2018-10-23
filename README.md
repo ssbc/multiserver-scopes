@@ -19,4 +19,4 @@ returns default host for a given scope
 
 # more ideas
 
-`compare(scope_a, scope_b)` for use with `sort`. Sort arrays in adcending order of included machines: device < local <= private < public. Unknown scopes sort before everyting (because they include nothing)
+`compare(scope_a, scope_b)` for use with `sort`. Sort scopes in ascending order of size: device < local <= private < public. Unknown scopes sort before everyting (because they include nothing)
