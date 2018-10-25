@@ -1,4 +1,4 @@
-ssb-scopes
+multiserver-scopes
 ---
 
 Currently a simple wrapper around non-private-ip.

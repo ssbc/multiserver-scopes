@@ -1,12 +1,12 @@
 {
-  "name": "ssb-scopes",
+  "name": "multiserver-scopes",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["ssb"],
+  "keywords": [],
   "author": "Jan Bölsche <jan@lagomorph.de> (https://regular.codes/)",
   "license": "MIT",
   "dependencies": {
