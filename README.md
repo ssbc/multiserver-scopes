@@ -8,9 +8,22 @@ This module should become the definition of what scopes mean in ssb.
 
 ## API
 
-## `host(scope)`
+## `canonicalize(scope)`
 
-returns default host for a given scope
+There are two names used in the scuttlebutt codebase for the LAN scope: `local` and `private`.
+`canonocalize()` deals with this (and possible other aliases) by mapping both names to 'private'.
+
+The complete mapping is:
+
+```
+- device  -> device
+- local   -> private
+- private -> private
+- public  -> public
+```
+## `host(scope, opts)`
+ 
+returns default host for a given scope. Returns an IPv4 address unless opts.ipv6 is truthy.
 
 - `device` -> 'localhost'
 - `local` -> private/non-routable IP (e.g. 192.168 ...)
